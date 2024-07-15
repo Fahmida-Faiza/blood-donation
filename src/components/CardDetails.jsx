@@ -1,7 +1,12 @@
 
+
 import { Link } from "react-router-dom";
 
 const CardDetails = ({ coffees, setCoffees, coffee }) => {
+
+  
+
+    //////////////
 
     // const [group, setGroup] = useState([]);
     const { _id, title, desc, img } = coffee;
@@ -23,6 +28,9 @@ const CardDetails = ({ coffees, setCoffees, coffee }) => {
 
     return (
         <div>
+
+            
+
             {/* <h1>{group.id}</h1>
            <h3>{group.title}</h3>
            <p>{group.desc}</p> */}
@@ -41,6 +49,7 @@ const CardDetails = ({ coffees, setCoffees, coffee }) => {
                             <button className="btn ml-4 lg:ml-0">View</button>
                         </Link>
                     </div>
+
                 </div>
             </div>
             {/* <div>

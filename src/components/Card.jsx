@@ -6,7 +6,7 @@ const Card = () => {
     // const { id, title, desc } = loadedData;
     const loadedCoffees = useLoaderData();
     const [coffees, setCoffees] = useState(loadedCoffees)
-    console.log(coffees)
+    // console.log(coffees)
     return (
         <div className="grid grid-cols-1 gap-10 md:grid-cols-3 lg:grid-cols-4">
             {/* <div className="card bg-base-100 shadow-xl "> */}
@@ -30,7 +30,7 @@ const Card = () => {
                         coffees.map(coffee => <CardDetails
                             key={coffee._id}
                             coffee={coffee}
-
+                           
                             coffees={coffees}
                             setCoffees={setCoffees}
 

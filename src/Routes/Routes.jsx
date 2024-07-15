@@ -6,6 +6,7 @@ import About from "../components/About";
 import Contact from "../components/Contat"
 
 import CoffeeDetails from "../components/CoffeeDetails";
+import Order from "../components/Order";
 // import Card from "../components/Card";
 
 
