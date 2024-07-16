@@ -4,10 +4,9 @@ import Home from "../components/Home";
 
 import About from "../components/About";
 import Contact from "../components/Contat"
-
+import Login from "../components/Login"
 import CoffeeDetails from "../components/CoffeeDetails";
-import Order from "../components/Order";
-// import Card from "../components/Card";
+import SignUp from "../components/SignUp";
 
 
 const router = createBrowserRouter([
@@ -28,20 +27,21 @@ const router = createBrowserRouter([
                 path: '/contact',
                 element: <Contact></Contact>
             },
-            // {
-            //     path: '/donner/:userId',
-            //     element: <CardDetails></CardDetails>,
-            // },
+            {
+                path: '/login',
+                element: <Login></Login>
+            },
+            {
+                path: '/signup',
+                element: <SignUp></SignUp>
+            },
+
             {
                 path: 'coffee/:_id',
                 element: <CoffeeDetails></CoffeeDetails>,
                 loader: ({ params }) => fetch(`http://localhost:5000/coffee/${params._id}`)
             }
-            // {
-            //     path: '/coffee/:id',
-            //     element: <Card></Card>,
-            //     loader: () => fetch('http://localhost:5000/coffee')
-            // },
+
         ]
         
     },

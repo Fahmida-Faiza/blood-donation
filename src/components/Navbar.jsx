@@ -36,7 +36,7 @@ const Navbar = () => {
                   
 
                     <div className="my-4">
-                        <Link className="btn btn-error" to="/form">Doner!</Link>
+                        <Link className="btn btn-error" to="/login">Doner!</Link>
                     </div>
 
                 </div>
