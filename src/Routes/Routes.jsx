@@ -7,6 +7,7 @@ import Contact from "../components/Contat"
 import Login from "../components/Login"
 import CoffeeDetails from "../components/CoffeeDetails";
 import SignUp from "../components/SignUp";
+import Form from "../components/Form";
 
 
 const router = createBrowserRouter([
@@ -40,6 +41,11 @@ const router = createBrowserRouter([
                 path: 'coffee/:_id',
                 element: <CoffeeDetails></CoffeeDetails>,
                 loader: ({ params }) => fetch(`http://localhost:5000/coffee/${params._id}`)
+            },
+            {
+                path: '/form',
+                element: <Form></Form>
+                
             }
 
         ]

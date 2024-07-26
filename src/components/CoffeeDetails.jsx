@@ -14,7 +14,7 @@ const CoffeeDetails = () => {
   // 
 
   useEffect(() => {
-    fetch('../db.json')
+    fetch('http://localhost:5000/form')
       .then(res => res.json())
       .then(data => {
 

@@ -9,8 +9,10 @@ const Navbar = () => {
         <>
             <li><Link to="/">Home</Link></li>
             <li><Link to="/about">About</Link></li>
-            <li><Link to="/order">Order</Link></li>
+            
             <li><Link to="/contact">Contact</Link></li>
+          
+            <li><Link to="/form">Doner Form</Link></li>
           
         </>
     return (
@@ -36,7 +38,7 @@ const Navbar = () => {
                   
 
                     <div className="my-4">
-                        <Link className="btn btn-error" to="/login">Doner!</Link>
+                        <Link className="btn btn-error" to="/login">Login</Link>
                     </div>
 
                 </div>
