@@ -34,19 +34,19 @@ const CardDetails = ({ coffees, setCoffees, coffee }) => {
             {/* <h1>{group.id}</h1>
            <h3>{group.title}</h3>
            <p>{group.desc}</p> */}
-            <div className="card bg-base-100 w-72 shadow-xl">
+            <div className="card bg-base-100 w-72 shadow-xl border-2 border-red-600">
                 <figure className="px-10 pt-10">
                     <img
                         src={img}
                         alt="Shoes"
                         className="rounded-xl" />
                 </figure>
-                <div className="card-body items-center text-center">
+                <div className="card-body items-center text-center text-white">
                     <h2 className="card-title">{title}</h2>
                     <p>{desc}</p>
                     <div className="card-actions">
                         <Link to={`coffee/${_id}`}>
-                            <button className="btn ml-4 lg:ml-0">View</button>
+                            <button className="btn btn-success ml-4 lg:ml-0 text-white">View</button>
                         </Link>
                     </div>
 

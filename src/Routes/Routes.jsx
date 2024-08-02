@@ -3,7 +3,7 @@ import Main from "../Layout/Main";
 import Home from "../components/Home";
 
 import About from "../components/About";
-import Contact from "../components/Contat"
+import Contact from "../components/Contact"
 import Login from "../components/Login"
 import CoffeeDetails from "../components/CoffeeDetails";
 import SignUp from "../components/SignUp";

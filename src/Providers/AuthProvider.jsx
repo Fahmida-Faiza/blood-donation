@@ -41,7 +41,7 @@ const AuthProvider = ({ children }) => {
             setLoading(false)
             //if user exists then issue a token
             if (currentUser) {
-
+              
                 axios.post('http://localhost:5000/jwt', loggedUser,
 
                     {

@@ -26,10 +26,10 @@ const Form = () => {
         const phone = form.phone.value;
         const location = form.location.value;
         const img = form.img.value;
-       
-       
-       
-        console.log(name, email,group,phone, location, img)
+
+
+
+        console.log(name, email, group, phone, location, img)
 
         ///////////////////////
         // database called
@@ -38,7 +38,7 @@ const Form = () => {
         // axios.post('http://localhost:5000/form', formItem)
         /////////
         axios.post('http://localhost:5000/form', formItem)
-        
+
             .then(res => {
                 console.log(res.data)
                 if (res.data.insertedId) {
@@ -63,88 +63,97 @@ const Form = () => {
     return (
         <>
             <form onSubmit={handleform} >
-                <div className=" bg-red-200 text-center my-12">
+                <div className=" text-center my-12 text-white">
                     <h3 className="font-medium text-3xl uppercase  py-5 "> Form Fill-Up Page</h3>
                     <div className="flex justify-center">
                         <div className="w-3/4 lg:w-2/3 ">
 
-                            <div className="grid grid-cols-2 justify-center gap-5">
+                            <div className="grid grid-cols-2 justify-center gap-5 text-white">
                                 <label className="form-control w-full">
                                     <div className="label">
-                                        <span className="label-text">Full Name</span>
+                                        <span className="label-text text-white">Full Name</span>
                                     </div>
                                     <input type="text"
                                         name="name"
                                         // defaultValue={user?.displayName}
                                         required
                                         placeholder="Full Name"
-                                        className="input input-bordered w-full" />
+                                        className="input input-bordered w-full " />
                                 </label>
 
-                              
+
                                 <label className="form-control w-full">
                                     <div className="label">
-                                        <span className="label-text">Email</span>
+                                        <span className="label-text text-white">Email</span>
                                     </div>
                                     <input type="email"
                                         name="email"
                                         // defaultValue={user.email}
                                         required
                                         placeholder="Enter your Email"
-                                        className="input input-bordered w-full" />
+                                        className="input input-bordered w-full " />
                                 </label>
-                              
-                              
-                             
+
+
+
                                 <label className="form-control w-full">
                                     <div className="label">
-                                        <span className="label-text">Blood Group</span>
+                                        <span className="label-text text-white">Blood Group</span>
+                                    </div>
+
+                                    {/* .................................. */}
+                                    <select name="group" className="input input-bordered w-full ">
+                                        <option value="A+">A+</option>
+                                        <option value="A-">A-</option>
+                                        <option value="B+">B+</option>
+                                        <option value="B-">B-</option>
+                                        <option value="AB+">AB+</option>
+                                        <option value="AB-">AB-</option>
+                                        <option value="O+">O+</option>
+                                        <option value="O-">O-</option>
+                                    </select>
+                                    {/* .................................. */}
+
+
+                                </label>
+                                <label className="form-control w-full">
+                                    <div className="label">
+                                        <span className="label-text text-white">Mobile Number</span>
                                     </div>
                                     <input type="text"
-                                        name="group"
-                                        // defaultValue={user.email}
-                                        required
-                                        placeholder="Blood group "
-                                        className="input input-bordered w-full" />
-                                </label>
-                                <label className="form-control w-full">
-                                    <div className="label">
-                                        <span className="label-text">Mobile Number</span>
-                                    </div>
-                                    <input type="number"
                                         name="phone"
                                         // defaultValue={user.email}
                                         required
                                         placeholder="Phone Number"
-                                        className="input input-bordered w-full" />
+                                        className="input input-bordered w-full " />
                                 </label>
                                 <label className="form-control w-full">
                                     <div className="label">
-                                        <span className="label-text">Location</span>
+                                        <span className="label-text text-white">Location</span>
                                     </div>
                                     <input type="text"
                                         name="location"
                                         // defaultValue={user.email}
                                         required
                                         placeholder="location"
-                                        className="input input-bordered w-full" />
+                                        className="input input-bordered w-full " />
                                 </label>
                                 <label className="form-control w-full">
                                     <div className="label">
-                                        <span className="label-text">Image</span>
+                                        <span className="label-text text-white">Image</span>
                                     </div>
                                     <input type="text"
                                         name="img"
                                         // defaultValue={user.email}
                                         required
                                         placeholder="Your Image"
-                                        className="input input-bordered w-full" />
+                                        className="input input-bordered w-full " />
                                 </label>
-                              
-                             
+
+
                             </div>
 
-                           
+
 
                         </div>
                     </div>
