@@ -15,7 +15,7 @@ const Banner = () => {
       <div
         className="hero min-h-[600px] "
         style={{
-          backgroundImage: "url(banner.jpg)",
+          backgroundImage: "url(blood-donation.png)",
         }}>
       </div>
        

@@ -53,7 +53,7 @@ const CoffeeDetails = () => {
     <div>
       {/* search er kaj */}
       <div className="">
-        <label className="input input-bordered flex items-center gap-2">
+        <label className="input input-bordered flex items-center gap-2 border-white border-2 w-2/3 mx-auto">
 
           {/*  */}
           <input type="text" 
@@ -88,7 +88,7 @@ const CoffeeDetails = () => {
       <h3 className="text-3xl font-bold text-center my-5 text-white">BloodDetails</h3>
 
       {/* .............................................. */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 
 
         {/* map korsi group key */}
@@ -101,7 +101,7 @@ const CoffeeDetails = () => {
           searchData.map(aGroup => <div key={aGroup.id} >
            {/*  */}
                 {
-                  <div className="card bg-base-100 w-80 shadow-xl border-red-600 border-2 text-white">
+                  <div className="card bg-base-100 w-72 shadow-xl border-red-600 border-2 text-white">
                       <figure>
                         <img
                           src={aGroup.img}
