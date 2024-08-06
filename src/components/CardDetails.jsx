@@ -9,7 +9,7 @@ const CardDetails = ({ coffees, setCoffees, coffee }) => {
     //////////////
 
     // const [group, setGroup] = useState([]);
-    const { _id, title, desc, img } = coffee;
+    const { _id, title, img } = coffee;
 
 
     // useEffect(() => {
@@ -43,7 +43,6 @@ const CardDetails = ({ coffees, setCoffees, coffee }) => {
                 </figure>
                 <div className="card-body items-center text-center text-white">
                     <h2 className="card-title">{title}</h2>
-                    <p>{desc}</p>
                     <div className="card-actions">
                         <Link to={`coffee/${_id}`}>
                             <button className="btn btn-success ml-4 lg:ml-0 text-white">View</button>

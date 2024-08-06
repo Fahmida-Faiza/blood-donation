@@ -5,7 +5,7 @@
         "email": "abc@gmail.com",
         "group": "A+",
         "phone": "01234567890",
-        "location": "Dhaka",
+        "division": "Dhaka",
         "img": "https://i.ibb.co/4ZDWcdp/blood-img.jpg"
     },
     {
@@ -14,7 +14,7 @@
         "email": "bc@gmail.com",
         "group": "A+",
         "phone": "012345142369",
-        "location": "Dhaka",
+        "division": "Dhaka",
         "img": "https://i.ibb.co/4ZDWcdp/blood-img.jpg"
     },
     {
@@ -23,7 +23,7 @@
         "email": "ca@gmail.com",
         "group": "B+",
         "phone": "0123451423369",
-        "location": "Rangpur",
+        "division": "Rangpur",
         "img": "https://i.ibb.co/4ZDWcdp/blood-img.jpg"
     },
     {
@@ -32,7 +32,7 @@
         "email": "cd@gmail.com",
         "group": "A-",
         "phone": "0123451421264",
-        "location": "Rangpur",
+        "division": "Rangpur",
         "img": "https://i.ibb.co/4ZDWcdp/blood-img.jpg"
     },
     {
@@ -41,7 +41,7 @@
         "email": "ea@gmail.com",
         "group": "AB+",
         "phone": "0123451421279",
-        "location": "Sylhet",
+        "division": "Sylhet",
         "img": "https://i.ibb.co/4ZDWcdp/blood-img.jpg"
     },
     {
@@ -50,7 +50,7 @@
         "email": "ef@gmail.com",
         "group": "AB+",
         "phone": "0123451421169",
-        "location": "Sylhet",
+        "division": "Sylhet",
         "img": "https://i.ibb.co/4ZDWcdp/blood-img.jpg"
     },
     {
@@ -59,7 +59,7 @@
         "email": "fe@gmail.com",
         "group": "AB+",
         "phone": "0123451421279",
-        "location": "Sylhet",
+        "division": "Sylhet",
         "img": "https://i.ibb.co/4ZDWcdp/blood-img.jpg"
     },
     {
@@ -68,7 +68,7 @@
         "email": "gh@gmail.com",
         "group": "O-",
         "phone": "01234514214",
-        "location": "Kurigram",
+        "division": "Kurigram",
         "img": "https://i.ibb.co/4ZDWcdp/blood-img.jpg"
     },
     {
@@ -77,7 +77,7 @@
         "email": "hg@gmail.com",
         "group": "B+",
         "phone": "01234514136",
-        "location": "Pabna",
+        "division": "Pabna",
         "img": "https://i.ibb.co/4ZDWcdp/blood-img.jpg"
     },
     {
@@ -86,7 +86,7 @@
         "email": "ij@gmail.com",
         "group": "A-",
         "phone": "01234514214",
-        "location": "Natore",
+        "division": "Natore",
         "img": "https://i.ibb.co/4ZDWcdp/blood-img.jpg"
     },
     {
@@ -95,7 +95,7 @@
         "email": "ji@gmail.com",
         "group": "AB-",
         "phone": "01217914214",
-        "location": "Nilphamari",
+        "division": "Nilphamari",
         "img": "https://i.ibb.co/4ZDWcdp/blood-img.jpg"
     },
     {
@@ -104,7 +104,7 @@
         "email": "kh@gmail.com",
         "group": "A+",
         "phone": "01229714214",
-        "location": "Bogura",
+        "division": "Bogura",
         "img": "https://i.ibb.co/4ZDWcdp/blood-img.jpg"
     },
     {
@@ -113,7 +113,7 @@
         "email": "hk@gmail.com",
         "group": "B-",
         "phone": "01242169214",
-        "location": "Saidpur",
+        "division": "Saidpur",
         "img": "https://i.ibb.co/4ZDWcdp/blood-img.jpg"
     },
     {
@@ -122,7 +122,7 @@
         "email": "lk@gmail.com",
         "group": "O+",
         "phone": "01274914214",
-        "location": "Dinajpur",
+        "division": "Dinajpur",
         "img": "https://i.ibb.co/4ZDWcdp/blood-img.jpg"
     },
     {
@@ -131,7 +131,7 @@
         "email": "mn@gmail.com",
         "group": "A+",
         "phone": "01274914416",
-        "location": "Dhaka",
+        "division": "Dhaka",
         "img": "https://i.ibb.co/4ZDWcdp/blood-img.jpg"
     }
 ]

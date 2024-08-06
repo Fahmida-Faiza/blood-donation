@@ -19,29 +19,30 @@ const CoffeeDetails = () => {
       .then(data => {
 
         // filter korsi blood (group r sathe title)
-        const foundGroup = data.filter(aGroup=>aGroup.group === coffee.title);
+        const foundGroup = data.filter(aGroup => aGroup.group === coffee.title);
         setGroup(foundGroup);
       }
-    
-    );
+
+      );
   }, [])
 
   console.log(group)
 
 
-// search functionality
+  // search functionality
 
-  const searchData = group.filter((aGroup) => 
+  const searchData = group.filter((aGroup) =>
 
-    aGroup.location.toLowerCase().includes(search.toLowerCase())
-
-
-
-)
+    // aGroup.location.toLowerCase().includes(search.toLowerCase())
+    aGroup.division.toLowerCase().includes(search.toLowerCase()) || aGroup.district.toLowerCase().includes(search.toLowerCase())
 
 
 
-// ////////////
+  )
+
+
+
+  // ////////////
 
 
 
@@ -49,26 +50,26 @@ const CoffeeDetails = () => {
 
 
   return (
-    
+
     <div>
       {/* search er kaj */}
       <div className="">
         <label className="input input-bordered flex items-center gap-2 border-white border-2 w-2/3 mx-auto">
 
           {/*  */}
-          <input type="text" 
-          
+          <input type="text"
+
             value={search}
-             onChange={(e)  => setSearch(e.target.value)}
+            onChange={(e) => setSearch(e.target.value)}
 
-            //  
-          
-          className="grow" placeholder="Search Location"
-           />
+            
+
+            className="grow" placeholder="Search Division"
+          />
 
 
 
-           {/* saerch sesh */}
+          {/* saerch sesh */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 16 16"
@@ -99,26 +100,27 @@ const CoffeeDetails = () => {
 
           // search
           searchData.map(aGroup => <div key={aGroup.id} >
-           {/*  */}
-                {
-                  <div className="card bg-base-100 w-72 shadow-xl border-red-600 border-2 text-white">
-                      <figure>
-                        <img
-                          src={aGroup.img}
-                          alt="Shoes" />
-                      </figure>
-                      <div className="card-body">
-                        <h2 className="card-title">{aGroup.name}</h2>
-                        <p>{aGroup.phone}</p>
-                        <p>{aGroup.location}</p>
-                        <div className="card-actions justify-end">
-                          <Link to="/">
-                            <button className="btn btn-info">Go Back</button>
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                    
+            {/*  */}
+            {
+              <div className="card bg-base-100 w-72 shadow-xl border-red-600 border-2 text-white">
+                <figure>
+                  <img
+                    src={aGroup.img}
+                    alt="Shoes" />
+                </figure>
+                <div className="card-body">
+                  <h2 className="card-title">{aGroup.name}</h2>
+                  <p>{aGroup.phone}</p>
+                  {/* <p>{aGroup.location}</p> */}
+                  <p>{aGroup.district}, {aGroup.division} </p>
+                  <div className="card-actions justify-end">
+                    <Link to="/">
+                      <button className="btn btn-info">Go Back</button>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+
             }
 
 
